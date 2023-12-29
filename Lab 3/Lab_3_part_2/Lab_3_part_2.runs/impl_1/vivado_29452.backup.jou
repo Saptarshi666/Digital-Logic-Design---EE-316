@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Fri Oct  8 12:58:41 2021
+# Process ID: 29452
+# Current directory: C:/Users/deeps/Lab_3_part_2/Lab_3_part_2.runs/impl_1
+# Command line: vivado.exe -log decoder.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source decoder.tcl -notrace
+# Log file: C:/Users/deeps/Lab_3_part_2/Lab_3_part_2.runs/impl_1/decoder.vdi
+# Journal file: C:/Users/deeps/Lab_3_part_2/Lab_3_part_2.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source decoder.tcl -notrace

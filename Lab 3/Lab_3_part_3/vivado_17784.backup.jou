@@ -1,0 +1,45 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Fri Oct  8 13:12:21 2021
+# Process ID: 17784
+# Current directory: C:/Users/deeps/Lab_3_part_3
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9472 C:\Users\deeps\Lab_3_part_3\Lab_3_part_3.xpr
+# Log file: C:/Users/deeps/Lab_3_part_3/vivado.log
+# Journal file: C:/Users/deeps/Lab_3_part_3\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/deeps/Lab_3_part_3/Lab_3_part_3.xpr
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+add_files -fileset constrs_1 -norecurse C:/Users/deeps/Lab_3_part_3/Basys3_Master.xdc
+import_files -fileset constrs_1 -force C:/Users/deeps/Lab_3_part_3/Basys3_Master.xdc
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/deeps/Lab_3_part_3/Lab_3_part_3.runs/impl_1/BCD_TO_7_SEGMENT_DISPLAY.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/deeps/Lab_3_part_3/Lab_3_part_3.runs/impl_1/BCD_TO_7_SEGMENT_DISPLAY.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/deeps/Lab_3_part_3/Lab_3_part_3.runs/impl_1/BCD_TO_7_SEGMENT_DISPLAY.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]

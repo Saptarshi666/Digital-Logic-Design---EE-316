@@ -1,0 +1,76 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Fri Oct  8 13:12:21 2021
+# Process ID: 17784
+# Current directory: C:/Users/deeps/Lab_3_part_3
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9472 C:\Users\deeps\Lab_3_part_3\Lab_3_part_3.xpr
+# Log file: C:/Users/deeps/Lab_3_part_3/vivado.log
+# Journal file: C:/Users/deeps/Lab_3_part_3\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/deeps/Lab_3_part_3/Lab_3_part_3.xpr
+WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/deeps/Lab_3_part_3/Lab_3_part_3.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2021.1/data/ip'.
+open_project: Time (s): cpu = 00:00:27 ; elapsed = 00:00:11 . Memory (MB): peak = 1106.922 ; gain = 0.000
+update_compile_order -fileset sources_1
+lexit
+INFO: [Common 17-206] Exiting Vivado at Fri Oct  8 13:51:00 2021...
+
+Run output will be captured here: C:/Users/deeps/Lab_3_part_3/Lab_3_part_3.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Fri Oct  8 13:14:13 2021] Launched impl_1...
+Run output will be captured here: C:/Users/deeps/Lab_3_part_3/Lab_3_part_3.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri Oct  8 13:15:36 2021] Launched impl_1...
+Run output will be captured here: C:/Users/deeps/Lab_3_part_3/Lab_3_part_3.runs/impl_1/runme.log
+add_files -fileset constrs_1 -norecurse C:/Users/deeps/Lab_3_part_3/Basys3_Master.xdc
+import_files -fileset constrs_1 -force C:/Users/deeps/Lab_3_part_3/Basys3_Master.xdc
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Fri Oct  8 13:24:57 2021] Launched synth_1...
+Run output will be captured here: C:/Users/deeps/Lab_3_part_3/Lab_3_part_3.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Fri Oct  8 13:25:49 2021] Launched impl_1...
+Run output will be captured here: C:/Users/deeps/Lab_3_part_3/Lab_3_part_3.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri Oct  8 13:27:18 2021] Launched impl_1...
+Run output will be captured here: C:/Users/deeps/Lab_3_part_3/Lab_3_part_3.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3414] Connected to existing cs_server.
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183737461A
+open_hw_target: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2737.102 ; gain = 1630.180
+set_property PROGRAM.FILE {C:/Users/deeps/Lab_3_part_3/Lab_3_part_3.runs/impl_1/BCD_TO_7_SEGMENT_DISPLAY.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/deeps/Lab_3_part_3/Lab_3_part_3.runs/impl_1/BCD_TO_7_SEGMENT_DISPLAY.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183737461A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183737461A
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/deeps/Lab_3_part_3/Lab_3_part_3.runs/impl_1/BCD_TO_7_SEGMENT_DISPLAY.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183737461A
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Oct  8 18:52:22 2021...

@@ -1,0 +1,10 @@
+0.7
+2020.2
+Jun 10 2021
+20:04:57
+C:/Users/deeps/project_4_part_3/project_4_part_3.sim/sim_1/behav/xsim/glbl.v,1623370582,verilog,,,,glbl,,,,,,,,
+C:/Users/deeps/project_4_part_3/project_4_part_3.srcs/sim_1/new/tb_time_multiplexing_main.v,1634929137,verilog,,,,tb_time_multiplexing_main,,,,,,,,
+C:/Users/deeps/project_4_part_3/project_4_part_3.srcs/sources_1/new/clk_div_disp.v,1634935675,verilog,,C:/Users/deeps/project_4_part_3/project_4_part_3.srcs/sources_1/new/hex_to_7segment.v,,clk_div_disp,,,,,,,,
+C:/Users/deeps/project_4_part_3/project_4_part_3.srcs/sources_1/new/hex_to_7segment.v,1634929632,verilog,,C:/Users/deeps/project_4_part_3/project_4_part_3.srcs/sources_1/new/time_multiplexing_main.v,,hex_to_7segment,,,,,,,,
+C:/Users/deeps/project_4_part_3/project_4_part_3.srcs/sources_1/new/time_multiplexing_main.v,1634929026,verilog,,C:/Users/deeps/project_4_part_3/project_4_part_3.srcs/sources_1/new/time_mux_state_machine.v,,time_multiplexing_main,,,,,,,,
+C:/Users/deeps/project_4_part_3/project_4_part_3.srcs/sources_1/new/time_mux_state_machine.v,1634928919,verilog,,C:/Users/deeps/project_4_part_3/project_4_part_3.srcs/sim_1/new/tb_time_multiplexing_main.v,,time_mux_state_machine,,,,,,,,
